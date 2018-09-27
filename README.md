@@ -29,14 +29,14 @@ $ sudo docker run --rm -ti --name angular \
 
 ##### Arguments detail
 
-* ```--user $(id -u):$(id -g)
-``` Needed to be a non-root user, and keep host right owner. A /home/visitor folder is automatically created.
-* ```--volume $(pwd):/data
-``` Mount the current folder into /data (default folder)
-* ```--expose 4200
-``` Expose default Angular serve port
-* ```--publish 4200:4200
-``` Map exposed port on host
+* `--user $(id -u):$(id -g)`
+Needed to be a non-root user, and keep host right owner. A /home/visitor folder is automatically created.
+* `--volume $(pwd):/data`
+Mount the current folder into /data (default folder)
+* `--expose 4200`
+Expose default Angular serve port
+* `--publish 4200:4200`
+Map exposed port on host
 
 #### How to view served application on host
 

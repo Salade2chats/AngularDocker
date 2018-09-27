@@ -14,7 +14,7 @@ ENV USER visitor
 ENV HOME /home/$USER
 ENV PATH $PATH:$HOME
 RUN mkdir -p $HOME
-COPY dependencies/.bashrc $HOME/.bashrc
+COPY dependencies/bashrc $HOME/.bashrc
 VOLUME $HOME
 
 # Install gosu to launch some commands as root
